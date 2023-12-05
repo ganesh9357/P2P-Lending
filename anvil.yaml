@@ -411,9 +411,6 @@ db_schema:
     - name: status
       admin_ui: {width: 200, order: 11}
       type: string
-    - name: requested_on
-      admin_ui: {width: 200, order: 7.5}
-      type: date
     title: foreclosure
   loan_details:
     client: full
@@ -485,12 +482,12 @@ db_schema:
     - name: closed_date
       admin_ui: {width: 200, order: 23}
       type: date
-    - name: timestamp
-      admin_ui: {width: 200, order: 9}
-      type: date
     - name: due_date
       admin_ui: {width: 200, order: 18.5}
       type: date
+    - name: timestamp
+      admin_ui: {width: 200}
+      type: datetime
     title: loan_details
   product_group:
     title: product_group
@@ -628,6 +625,9 @@ db_schema:
     - name: borrower_approved_date_time
       admin_ui: {width: 200, order: 6.5}
       type: date
+    - name: borrower_approve_date_time
+      admin_ui: {width: 200}
+      type: datetime
   product_categories:
     client: full
     server: full
