@@ -126,7 +126,7 @@ class dashboard(dashboardTemplate):
       lender_row[0]['make_visibility'] = True
       lender_row[0].update()
     else:
-      self.button_status.text = "OFFLINE"
+      self.button_status.text = "OFFLINE
       self.button_status.background = '#FFFFFF'  # White color
       self.button_status.foreground = '#FF0000'  # Red text
       lender_row = app_tables.lender.search()# Assuming you have a row with id=1 for the lender
