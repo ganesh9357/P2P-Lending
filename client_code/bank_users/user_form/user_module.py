@@ -15,11 +15,11 @@ def generate_user_id():
         highest_coustmer_id = find_highest_amigos_id()
         return highest_coustmer_id + 1
     else:
-        return 1000
+        return 100000
 
 def find_highest_amigos_id():
     table_data = app_tables.user_profile.search()
-    highest_id = 999
+    highest_id = 99999
     for row in table_data:
         coustmer_id = row['coustmer_id']
         if coustmer_id > highest_id:
