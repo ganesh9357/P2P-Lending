@@ -90,6 +90,7 @@ components:
     properties: {text: View Loan Foreclosure Requests}
     name: link_8
     layout_properties: {grid_position: 'CTGJHR,KKAVKN'}
+    event_bindings: {click: link_8_click}
   - type: Link
     properties: {text: Request  Top-up Amount}
     name: link_9
@@ -99,6 +100,7 @@ components:
     properties: {text: View/Download Portfolio}
     name: link_10
     layout_properties: {grid_position: 'KXIGQY,ZEQYRV'}
+    event_bindings: {click: link_10_click}
   - type: Link
     properties: {text: View/Edit Profile}
     name: link_11
