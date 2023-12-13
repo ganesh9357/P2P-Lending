@@ -20,7 +20,7 @@ class Lender_reg_form_6(Lender_reg_form_6Template):
         lending_period = None
 
         # Search for user_data in the lender table
-        user_data = app_tables.lender.search(coustmer_id=user_id)
+        user_data = app_tables.lender.search(customer_id==user_id)
 
         if user_data and len(user_data) > 0:
             lending_type = user_data[0]['lending_type']
