@@ -187,7 +187,7 @@ def search_user(query):
   if query:
     result=[
     x for x in result
-    if query in x["coustmer_id"]
+    if query in x["customer"]
     ]
   return result
 
