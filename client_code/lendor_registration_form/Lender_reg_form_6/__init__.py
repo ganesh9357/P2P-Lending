@@ -20,7 +20,7 @@ class Lender_reg_form_6(Lender_reg_form_6Template):
         lending_period = None
 
         # Search for user_data in the lender table
-        user_data = app_tables.lender.search(customer_id==user_id)
+        user_data = app_tables.lender.search(customer_id = user_id)
 
         if user_data and len(user_data) > 0:
             lending_type = user_data[0]['lending_type']
@@ -49,7 +49,7 @@ class Lender_reg_form_6(Lender_reg_form_6Template):
         # Check if user_data is not empty before accessing its elements
         if lending_type and investment and lending_period:
             # Search for existing user data in the lender table
-            user_data = app_tables.lender.search(coustmer_id=user_id)
+            user_data = app_tables.lender.search(customer_id= user_id)
 
             if user_data and len(user_data) > 0:
                 # If the row exists, update the existing row
