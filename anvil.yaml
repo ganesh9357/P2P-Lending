@@ -3,7 +3,7 @@ dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
-  server_config: {}
+  server_config: {auto_create_missing_columns: false}
 - source: /runtime/services/anvil/users.yml
   client_config: {allow_signup: true, enable_automatically: true, use_email: true,
     confirm_email: true, use_google: true, require_secure_passwords: true}
@@ -16,7 +16,7 @@ services:
   server_config: {}
 startup: {type: form, module: bank_users.main_form}
 package_name: bank_client
-allow_embedding: false
+allow_embedding: true
 name: P2P Lending App
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
