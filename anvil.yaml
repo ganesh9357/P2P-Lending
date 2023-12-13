@@ -569,8 +569,8 @@ db_schema:
     - name: date_time
       admin_ui: {width: 200}
       type: datetime
-    - name: coustmer_id
-      admin_ui: {order: 1, width: 200}
+    - name: customer_id
+      admin_ui: {order: 7, width: 200}
       type: number
     - name: lending_type
       admin_ui: {width: 200, order: 17}
