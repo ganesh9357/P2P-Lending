@@ -68,7 +68,7 @@ def add_lendor_five_form(pincode,state,country,user_id):
 
 @anvil.server.callable
 def add_lendor_six_form(lending_type, investment,lending_period, user_id):
-  row = app_tables.lender.add_row(investment=investment, lending_type=lending_type,lending_period=lending_period,coustmer_id=user_id)
+  row = app_tables.lender.add_row(investment=investment, lending_type=lending_type,lending_period=lending_period,customer_id = user_id)
     
     
 @anvil.server.callable
@@ -187,7 +187,7 @@ def search_user(query):
   if query:
     result=[
     x for x in result
-    if query in x["customer"]
+    if query in x["customer_id"]
     ]
   return result
 
