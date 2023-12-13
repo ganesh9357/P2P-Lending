@@ -59,7 +59,7 @@ def get_name(email):
 def find_user_id(email):
   user_true = app_tables.user_profile.search(email_user=email)
   if user_true:
-    coustmer_id = user_true[0]['coustmer_id']
+    coustmer_id = user_true[0]['customer_id']
     return coustmer_id
   else:
     return 0000000000
@@ -90,7 +90,7 @@ def registration_engine():
 def check_user_registration_form_done_or_not_engine(email):
   userId = find_user_id(email)
   print(userId)
-  user_talble = app_tables.user_profile.get(coustmer_id=userId)
+  user_talble = app_tables.user_profile.get(customer_id = userId)
   print(user_talble)
   if user_talble == None:
     print("if statement was executed ")
