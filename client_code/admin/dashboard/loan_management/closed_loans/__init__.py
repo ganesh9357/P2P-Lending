@@ -26,7 +26,7 @@ class closed_loans(closed_loansTemplate):
     for i in self.data:
       a+=1
       self.list_1.append(i['loan_id'])
-      self.list_2.append(i['coustmer_id'])
+      self.list_2.append(i['customer_id'])
       self.list_3.append(i['full_name'])
       self.list_4.append(i['loan_updated_status'])
     print(a)
@@ -43,7 +43,7 @@ class closed_loans(closed_loansTemplate):
           self.index.append(b)
           
       for i in self.index:
-        self.result.append({'loan_id' : self.list_1[i], 'coustmer_id' : self.list_2[i], 'full_name' : self.list_3[i], 'loan_status' : self.list_4[i]})
+        self.result.append({'loan_id' : self.list_1[i], 'customer_id' : self.list_2[i], 'full_name' : self.list_3[i], 'loan_status' : self.list_4[i]})
 
       self.repeating_panel_1.items = self.result
 

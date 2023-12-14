@@ -24,7 +24,7 @@ class loan_disbursed(loan_disbursedTemplate):
   
     self.result = []
     for i in self.user_profile:
-      self.id.append(i['coustmer_id'])
+      self.id.append(i['customer_id'])
       self.type.append(i['usertype'])
       self.account.append(i['account_number'])
 
@@ -82,7 +82,7 @@ class loan_disbursed(loan_disbursedTemplate):
     for i in self.data:
       a+=1
       self.list_1.append(i['loan_id'])
-      self.list_2.append(i['coustmer_id'])
+      self.list_2.append(i['customer_id'])
       self.list_3.append(i['full_name'])
       self.list_4.append(i['loan_updated_status'])
     print(a)
@@ -100,7 +100,7 @@ class loan_disbursed(loan_disbursedTemplate):
           
       print(self.index)
       for i in self.index:
-        self.result_3.append({'loan_id' : self.list_1[i], 'coustmer_id' : self.list_2[i], 'full_name' : self.list_3[i], 'loan_updated_status' : self.list_4[i]})
+        self.result_3.append({'loan_id' : self.list_1[i], 'customer_id' : self.list_2[i], 'full_name' : self.list_3[i], 'loan_updated_status' : self.list_4[i]})
 
       self.repeating_panel_1.items = self.result_3
 

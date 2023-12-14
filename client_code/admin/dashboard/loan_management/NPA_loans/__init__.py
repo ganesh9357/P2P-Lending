@@ -36,7 +36,7 @@ class NPA_loans(NPA_loansTemplate):
       self.id.append(i['loan_id'])
       self.intrest.append(i['interest_rate'])
       self.loan_due_amount.append(i['total_repayment_amount'])
-      self.c_id.append(i['coustmer_id'])
+      self.c_id.append(i['customer_id'])
       self.full_name.append(i['full_name'])
       self.status.append(i['loan_updated_status'])
 
@@ -83,7 +83,7 @@ class NPA_loans(NPA_loansTemplate):
     a = -1
     for i in self.index1:
       a += 1
-      self.final.append({'loan_id' : self.id[i], 'coustmer_id' : self.c_id[i], 'full_name' : self.full_name[i], 'amount': int(self.total[a])})
+      self.final.append({'loan_id' : self.id[i], 'customer_id' : self.c_id[i], 'full_name' : self.full_name[i], 'amount': int(self.total[a])})
 
     self.repeating_panel_1.items = self.final
 
