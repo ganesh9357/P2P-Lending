@@ -29,7 +29,7 @@ def find_highest_amigos_id():
 # It creates the ID for only new users
 def add_email_and_user_id(email_id):
     generated_id = generate_user_id()
-    app_tables.user_profile.add_row(email_user=email_id, coustmer_id=generated_id,registration_approve=False,profile_status=False,mobile_check=False,last_confirm=False)
+    app_tables.user_profile.add_row(email_user=email_id, customer_id=generated_id,registration_approve=False,profile_status=False,mobile_check=False,last_confirm=False)
 
 #----- end hear ----- #
 
