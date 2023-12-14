@@ -59,7 +59,7 @@ components:
       grid_position: CTDPXH,KAMCHA
     components:
     - type: RepeatingPanel
-      properties: {spacing_above: none, spacing_below: none, item_template: admin.dashboard.loan_management.under_process.RowTemplate9}
+      properties: {spacing_above: none, spacing_below: none, item_template: admin.dashboard.loan_manage.under_process.RowTemplate9}
       name: repeating_panel_1
       layout_properties: {}
     - type: Link

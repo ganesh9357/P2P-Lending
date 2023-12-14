@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -13,7 +13,7 @@ components:
     name: content_panel_copy
     layout_properties:
       col_widths: {}
-      grid_position: LMMSHE,YYXDIS
+      grid_position: AETBJQ,AWJFKB
     components:
     - type: Image
       properties: {role: null, vertical_align: center, height: 32, tooltip: '', border: '',
@@ -54,12 +54,10 @@ components:
       spacing_below: small
       background: ''
     name: data_grid_1
-    layout_properties:
-      col_widths: {}
-      grid_position: IHNLWR,ORCPMV
+    layout_properties: {grid_position: 'SYHKHY,ODSIUS'}
     components:
     - type: RepeatingPanel
-      properties: {spacing_above: none, spacing_below: none, item_template: admin.dashboard.loan_management.closed_loans.RowTemplate14}
+      properties: {spacing_above: none, spacing_below: none, item_template: admin.dashboard.loan_manage.approved_loans.RowTemplate2}
       name: repeating_panel_1
       layout_properties: {}
     - type: Link
