@@ -50,7 +50,7 @@ components:
     layout_properties: {grid_position: 'POSQKM,AJXXVP'}
     components:
     - type: RepeatingPanel
-      properties: {spacing_above: none, spacing_below: none, item_template: admin.dashboard.manage_products.view_product.RowTemplate5}
+      properties: {spacing_above: none, spacing_below: none, item_template: admin.dashboard.manag_prod.view_product.RowTemplate5}
       name: repeating_panel_1
       layout_properties: {}
 - type: FlowPanel
