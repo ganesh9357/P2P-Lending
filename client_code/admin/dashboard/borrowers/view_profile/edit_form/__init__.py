@@ -77,7 +77,7 @@ class edit_form(edit_formTemplate):
     a = -1
     for i in self.data:
       a+=1
-      self.id_list.append(i['coustmer_id'])
+      self.id_list.append(i['customer_id'])
       self.name_list.append(i['full_name'])
       self.status_list.append(i['profile_status'])
       self.gender_list.append(i['gender'])
@@ -207,7 +207,7 @@ class edit_form(edit_formTemplate):
 
     id_list = []
     for i in self.data:
-      id_list.append(i['coustmer_id'])
+      id_list.append(i['customer_id'])
 
     if self.get in id_list:
       a = id_list.index(self.get)

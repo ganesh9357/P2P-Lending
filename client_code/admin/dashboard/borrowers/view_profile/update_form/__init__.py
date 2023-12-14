@@ -21,7 +21,7 @@ class update_form(update_formTemplate):
       data = tables.app_tables.user_profile.search()
       id_list = []
       for i in data:
-        id_list.append(i['coustmer_id'])
+        id_list.append(i['customer_id'])
 
       if self.get in id_list:
         a = id_list.index(self.get)
