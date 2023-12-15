@@ -14,7 +14,7 @@ services:
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: admin.dashboard}
+startup: {type: module, module: admin.user_issue}
 package_name: bank_client
 allow_embedding: true
 name: P2P Lending App
