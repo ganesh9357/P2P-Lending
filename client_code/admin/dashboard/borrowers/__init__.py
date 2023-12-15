@@ -29,7 +29,7 @@ class borrowers(borrowersTemplate):
     
     for i in self.data:
       a+=1
-      self.list_1.append(i['customer_id'])
+      self.list_1.append(i['coustmer_id'])
       self.list_2.append(i['full_name'])
       self.list_3.append(i['email_user'])
       self.list_4.append(i['usertype'])
@@ -52,7 +52,7 @@ class borrowers(borrowersTemplate):
           self.index.append(b)
           
       for i in self.index:
-        self.result.append({'customer_id' : self.list_1[i], 'full_name' : self.list_2[i], 'email_user' : self.list_3[i], 'usertype' : self.list_4[i], 'last_confirm' : self.list_5[i],
+        self.result.append({'coustmer_id' : self.list_1[i], 'full_name' : self.list_2[i], 'email_user' : self.list_3[i], 'usertype' : self.list_4[i], 'last_confirm' : self.list_5[i],
                           'date_of_birth' : self.list_6[i], 'mobile' : self.list_7[i], 'registration_approve' : self.list_8[i]})
 
       self.repeating_panel_1.items = self.result
