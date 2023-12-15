@@ -1,4 +1,4 @@
-from ._anvil_designer import f_e_fTemplate
+from ._anvil_designer import fee_edit_formTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -8,7 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class f_e_f(f_e_fTemplate):
+class fee_edit_form(fee_edit_formTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
